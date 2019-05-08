@@ -1,6 +1,8 @@
 package controler;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +28,6 @@ public class LoginServlet extends HttpServlet {
 		
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
-		
 		LoginMetode metode = new LoginMetode();
 		
 		if(metode.daLiPostojiUser(userName)) {
