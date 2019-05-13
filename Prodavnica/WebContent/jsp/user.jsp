@@ -41,8 +41,8 @@
 				<td><input type="checkbox" value=<%=p.getIdProduct()%> name="check"></td>
 				<td>
 					<select name = "quantity">
-						<%for(int i =1; i<=p.getStock();i++){ %>
-							<option><%=i %></option>
+						<%for(int i =0; i<=p.getStock();i++){ %>
+							<option value="<%=i %>"><%=i %></option>
 						<%} %>
 					</select>
 				</td>
